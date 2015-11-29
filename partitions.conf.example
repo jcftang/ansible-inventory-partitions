@@ -1,0 +1,4 @@
+PartitionName=all Nodes=dev[0-25] KEY0=VALUE0
+PartitionName=web Nodes=dev[0-8,18-25] KEY1=VALUE1
+PartitionName=database Nodes=dev[9-17] Children=storage
+PartitionName=storage Nodes=dev[9-17] ansible_ssh_user=admin
